@@ -10,8 +10,8 @@ body {
 img {
   display: inline-block;
 
-  width: 420px;
-  height: 280px;
+  width: auto;
+  min-height: 100%;
 }
 
 .container {
@@ -136,30 +136,18 @@ img {
 .but-item {
   border: none;
   margin: 0 auto;
-  padding: 0;
-  width: 164px;
-  height: 60px;
-  outline: solid 1px;
+  padding: 0px;
   color: #626262;
   font-size: 20px;
-  line-height: 24px;
   text-align: center;
 }
 
-.button-item {
-  width: 164px;
+
+
+.but-list button {
+  min-width: 164px;
   height: 60px;
-}
-.but-item a {
-  text-decoration: none;
-  padding: 18px 26px;
-  color: #626262;
-}
-.but-list a:hover {
-  color: #68cbf8;
-}
-.but-list a:focus {
-  color: #68cbf8;
+  line-height: 24px;
 }
 
 .button {
