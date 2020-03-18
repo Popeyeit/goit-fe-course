@@ -1,6 +1,11 @@
 html {
   box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -48,6 +53,7 @@ img {
   line-height: 24px;
   color: #626262;
 }
+
 .site-nav-item a:hover,
 :focus {
   color: #68cbf8;
@@ -78,6 +84,10 @@ img {
   margin-right: 60px;
   display: inline-block;
   width: 420px;
+  margin-bottom: 130px;
+}
+.article-item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
 }
 
 .article-item h2 {
@@ -97,9 +107,11 @@ img {
 
   /* margin: 0; */
 }
+
 .article-item p {
   text-align: left;
 }
+
 .article-item h2 {
   text-align: left;
 }
@@ -110,9 +122,9 @@ img {
   /* margin-bottom: 130px; */
 }
 
-.p-item {
+/* .p-item {
   margin-bottom: 130px;
-}
+} */
 
 /* .article-item p:nth-of-type(2n) {
     margin-bottom: 130px;
