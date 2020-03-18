@@ -8,10 +8,9 @@ body {
 }
 
 img {
-  display: inline-block;
-
-  width: auto;
-  min-height: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -87,7 +86,7 @@ img {
   margin-bottom: 32px;
 }
 
-.article-img {
+.article-image {
   margin-bottom: 30px;
 }
 
@@ -141,8 +140,6 @@ img {
   font-size: 20px;
   text-align: center;
 }
-
-
 
 .but-list button {
   min-width: 164px;
