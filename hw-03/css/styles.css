@@ -1,0 +1,167 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #626262;
+}
+
+img {
+  display: inline-block;
+
+  width: 420px;
+  height: 280px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* NAV SECTION */
+.site-navigation {
+  padding: 72px 0px 0px 0px;
+  margin-bottom: 98px;
+}
+
+.site-nav-list {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.site-nav-item {
+  margin-right: 128px;
+  display: inline-block;
+}
+
+.site-navigation {
+  list-style: none;
+  font-size: 0;
+}
+
+.site-nav-item a {
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 24px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #626262;
+}
+.site-nav-item a:hover,
+:focus {
+  color: #68cbf8;
+}
+
+.site-nav-list li:last-child {
+  margin-right: 0px;
+}
+
+/* Articles section */
+
+.article-section {
+  margin-bottom: 52px;
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0px;
+}
+
+.article-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.article-item {
+  margin-right: 60px;
+  display: inline-block;
+  width: 420px;
+}
+
+.article-item h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.article-img {
+  margin-bottom: 30px;
+}
+
+.article-item p:nth-of-type(odd) {
+  font-size: 14px;
+  line-height: 17px;
+  color: #c7c1b6;
+
+  /* margin: 0; */
+}
+.article-item p {
+  text-align: left;
+}
+.article-item h2 {
+  text-align: left;
+}
+
+.article-item p:nth-of-type(2n) {
+  font-size: 14px;
+  line-height: 24px;
+  /* margin-bottom: 130px; */
+}
+
+.p-item {
+  margin-bottom: 130px;
+}
+
+/* .article-item p:nth-of-type(2n) {
+    margin-bottom: 130px;
+} */
+
+/* .article-item p:nth-child(n+3):nth-child(-n+8):nth-child(even) */
+
+/* .article-item .p-item p {
+    margin: 0px;
+} */
+
+/* Button */
+
+.but-list {
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.but-item {
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 164px;
+  height: 60px;
+  outline: solid 1px;
+  color: #626262;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.button-item {
+  width: 164px;
+  height: 60px;
+}
+.but-item a {
+  text-decoration: none;
+  padding: 18px 26px;
+  color: #626262;
+}
+.but-list a:hover {
+  color: #68cbf8;
+}
+.but-list a:focus {
+  color: #68cbf8;
+}
+
+.button {
+  margin-bottom: 70px;
+}
