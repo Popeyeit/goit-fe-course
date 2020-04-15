@@ -130,12 +130,12 @@ p {
 .slider-prew {
   position: absolute;
   left: 0;
-  background-image: url(img/left.png);
+  background-image: url(../img/left.png);
 }
 .slider-next {
   position: absolute;
   right: 0;
-  background-image: url(img/right.png);
+  background-image: url(../img/right.png);
 }
 
 .content-wrapper {
