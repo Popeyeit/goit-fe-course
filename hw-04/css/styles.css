@@ -81,9 +81,8 @@ img {
 }
 .nav-item {
   float: left;
-
-  line-height: 11px;
 }
+
 .nav-item:not(:nth-last-child(1)) {
   margin-right: 34px;
 }
@@ -175,6 +174,9 @@ img {
 }
 .catalog-list:hover .item {
   background-color: #1abc9c;
+}
+.catalog-list img:hover {
+  padding: 5px;
 }
 
 .catalog-list:hover .price {
