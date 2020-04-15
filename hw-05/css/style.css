@@ -10,6 +10,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+li {
+  list-style: none;
+}
 .clearfix {
   content: "";
   clear: both;
@@ -17,7 +20,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 1110px;
   margin: 0 auto;
 }
 /* NAVIGATION */
@@ -98,12 +101,6 @@ p {
   z-index: 1;
 }
 
-.container-button {
-  margin-top: 0 auto;
-  width: 1170px;
-  height: 102px;
-}
-
 .slider-content {
   position: absolute;
   left: 50%;
@@ -115,7 +112,7 @@ p {
 .slider-ctrl {
   height: 104px;
   width: 104px;
-  display: inline-block;
+
   border: none;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,30 +125,34 @@ p {
 }
 
 .slider-prew {
-  position: absolute;
-  left: 0;
+  float: left;
   background-image: url(../img/left.png);
 }
 .slider-next {
-  position: absolute;
-  right: 0;
+  float: right;
   background-image: url(../img/right.png);
 }
 
 .content-wrapper {
-  width: 824px;
+  width: max-content;
   margin: 0 auto;
+}
+.slider-content-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding-bottom: 14px;
 }
 
 .content-title {
-  display: block;
   font-size: 60px;
   line-height: 82px;
   color: #ffffff;
   text-transform: uppercase;
 }
 .content-description {
-  display: block;
   font-size: 24px;
   line-height: 54px;
   color: #ffffff;
@@ -166,9 +167,160 @@ p {
 .slides img {
   width: 100%;
   object-fit: cover;
-  height: 602px;
+  
 }
 
 .slides-list {
   position: relative;
+}
+
+/* Collection */
+.collection {
+  padding: 96px 0;
+  background-color: #e9f0fd;
+}
+
+.section-title {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(81, 81, 81);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 58px;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  background-color: rgb(26, 188, 156);
+  width: 164px;
+  height: 7px;
+  margin: auto;
+  margin-top: 28px;
+}
+
+.collection-list-item {
+  width: 255px;
+  float: left;
+}
+
+.collection-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.collection-img-wrapper {
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #1abc9c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  opacity: 0;
+  visibility: hidden;
+}
+.collection-list-item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-list-item {
+  float: left;
+}
+.overlay-list-item:nth-child(-n + 2) {
+  margin-right: 9px;
+  margin-bottom: 7px;
+}
+.overlay-btn-item {
+  height: 48px;
+  width: 48px;
+  border: 1px solid;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+}
+.hearth-btn {
+  background-image: url(../img/collection/like.png);
+}
+.connect-btn {
+  background-image: url(../img/collection/connecnt.png);
+}
+.time-btn {
+  background-image: url(../img/collection/time.png);
+}
+.basket {
+  background-image: url(../img/collection/basket.png);
+  background-color: rgb(50, 50, 50);
+  width: 164px;
+  background-position: left 12px center;
+  line-height: 32px;
+  text-align: right;
+  padding-right: 17px;
+  font-size: 14px;
+  font-family: "OpenSans";
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.overlay-btn-item:hover {
+  background-color: #1abc9c;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.description-item {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+
+  width: 255px;
+}
+.item-name {
+  font-size: 18px;
+  float: left;
+  width: 255px;
+  padding-left: 14px;
+  height: 40px;
+  line-height: 40px;
+  font-family: "Roboto";
+  background-color: rgb(50, 50, 50);
+}
+.item-price {
+  float: right;
+  width: 54px;
+  padding-left: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.collection-list-item:hover .item-name {
+  background-color: rgb(26, 188, 156);
+}
+.footer-wrapper {
+  margin: 0 auto;
+  height: 88px;
+  background-color: rgb(50, 50, 50);
+}
+.footer-description {
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(254, 254, 254);
+line-height: 88px;
+  text-align: center;
+}
+.footer-description a {
+  text-decoration: none;
+  color: rgb(26, 188, 156);
 }
