@@ -61,12 +61,9 @@ p {
   font-size: 0px;
   padding: 0;
   margin: 0;
-  width: calc(100% - 90px);
-  display: inline-block;
-  text-align: right;
-  vertical-align: middle;
+  float: right;
+  margin-top: 8px;
 }
-
 
 .nav-item {
   font-family: "Open Sans", sans-serif;
@@ -83,9 +80,7 @@ p {
   margin-right: 34px;
 }
 
-
 .nav-item a {
-    
   text-decoration: none;
   color: #000;
   display: block;
@@ -155,6 +150,7 @@ p {
   transform: translate(-50%, -50%);
   z-index: 2;
   padding-bottom: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 .content-title {
@@ -162,12 +158,14 @@ p {
   line-height: 82px;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: 900;
 }
 .content-description {
   font-size: 24px;
   line-height: 54px;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: 300;
 }
 .content-description-stick::after,
 .content-description-stick::before {
@@ -290,7 +288,7 @@ p {
 }
 .overlay-btn-item:hover {
   background-color: #1abc9c;
-  border-color: rgba(0, 0, 0, 0);
+  border-color: rgb(26, 188, 156);
 }
 
 .description-item {
@@ -310,7 +308,7 @@ p {
 }
 .item-price {
   float: right;
-  width: 54px;
+  width: 55px;
   padding-left: 12px;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -325,7 +323,7 @@ p {
 }
 .footer-description {
   font-size: 16px;
-  font-family: "Myriad Pro";
+  font-family: "OpenSans", sans-serif;
   color: rgb(254, 254, 254);
   line-height: 88px;
   text-align: center;
