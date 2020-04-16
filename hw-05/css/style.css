@@ -45,7 +45,7 @@ p {
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
-  width: 86px;
+
   font-size: 32px;
   line-height: 32px;
   font-weight: 300;
@@ -205,8 +205,7 @@ p {
   background-color: rgb(26, 188, 156);
   width: 164px;
   height: 7px;
-  margin: auto;
-  margin-top: 28px;
+  margin: 28 0 auto;
 }
 
 .collection-list-item {
@@ -251,8 +250,7 @@ p {
   float: left;
 }
 .overlay-list-item:nth-child(-n + 2) {
-  margin-right: 9px;
-  margin-bottom: 7px;
+  margin: 0 9px 7px 0;
 }
 
 .overlay-btn-item {
@@ -295,16 +293,18 @@ p {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   width: 255px;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(50, 50, 50);
+  line-height: 40px;
+  font-size: 18px;
 }
 .item-name {
-  font-size: 18px;
   float: left;
-  width: 255px;
   padding-left: 14px;
-  height: 40px;
-  line-height: 40px;
-  font-family: "Roboto";
-  background-color: rgb(50, 50, 50);
+}
+.item-name a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 .item-price {
   float: right;
@@ -313,12 +313,12 @@ p {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-.collection-list-item:hover .item-name {
+.collection-list-item:hover .description-item {
   background-color: rgb(26, 188, 156);
 }
 .footer-wrapper {
   margin: 0 auto;
-  height: 88px;
+
   background-color: rgb(50, 50, 50);
 }
 .footer-description {
