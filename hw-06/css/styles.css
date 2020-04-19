@@ -434,6 +434,7 @@ ol {
   font-weight: 700;
   line-height: 16px;
   cursor: pointer;
+  transition: background-color 200ms linear;
 }
 
 .subscribe-form-btn:hover,
