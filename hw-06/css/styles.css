@@ -406,6 +406,7 @@ ol {
   height: 44px;
   width: 234px;
   padding-left: 13px;
+  font-family: "Roboto", sans-serif;
 }
 
 .subscribe-form-input::placeholder {
