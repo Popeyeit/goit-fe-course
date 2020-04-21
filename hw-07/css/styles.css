@@ -209,8 +209,6 @@ html {
 .contact {
   background-image: url(../img/contact/Map-Image.png);
   background-color: #222222;
-  width: 100%;
-  height: 100%;
   padding: 92px 0 115px 0;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -226,17 +224,21 @@ html {
   margin-bottom: 24px;
   flex-wrap: wrap;
 }
+.info-user-list,
+.textarea-wrapper {
+  width: calc(50% - 15px);
+}
 
 .form-input,
-.message-form {
+.message-form-area {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: left;
   border: 1px solid rgb(204, 204, 204);
   border-radius: 2px;
-  width: 459px;
   padding-left: 20px;
+  width: 100%;
 }
 
 .form-input {
@@ -245,7 +247,7 @@ html {
   border-radius: 2px;
 }
 
-.message-form {
+.message-form-area {
   height: 214px;
   padding: 18px 0 0 20px;
   resize: none;
@@ -257,19 +259,19 @@ html {
 }
 
 .form-input:required:focus:valid:not(:placeholder-shown),
-.message-form:required:focus:valid:not(:placeholder-shown) {
+.message-form-area:required:focus:valid:not(:placeholder-shown) {
   outline: 1px solid rgb(0, 255, 0);
   outline-offset: 0px;
 }
 
 .form-input:required:focus:invalid:not(:placeholder-shown),
-.message-form:required:focus:invalid:not(:placeholder-shown) {
+.message-form-area:required:focus:invalid:not(:placeholder-shown) {
   outline: 1px solid rgb(255, 0, 0);
   outline-offset: 0px;
 }
 
 .form-input::placeholder,
-.message-form::placeholder {
+.message-form-area::placeholder {
   color: rgb(187, 187, 187);
   font-weight: 700;
   text-transform: uppercase;
