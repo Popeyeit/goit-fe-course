@@ -168,7 +168,7 @@ html {
 
 .list-services-item p {
   font-size: 14px;
-  font-family: "RobotoSlab", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   color: rgb(119, 119, 119);
   text-align: center;
   line-height: 22px;
@@ -224,6 +224,7 @@ html {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
+  flex-wrap: wrap;
 }
 
 .form-input,
