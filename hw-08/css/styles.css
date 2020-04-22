@@ -110,7 +110,6 @@ picture {
 
 .navigation-btn-wrapper {
     text-align: center;
-
 }
 
 .logo-picture-wrapper-laptop {
@@ -311,6 +310,11 @@ picture {
     .partners-list-item:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    .navigation-btn-wrapper {
+        margin-bottom: 120px;
+    }
+
 }
 
 @media (min-width: 768px) {
