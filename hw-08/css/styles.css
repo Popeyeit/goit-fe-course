@@ -1,0 +1,133 @@
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    line-height: 1.2;
+}
+
+body {
+    line-height: 1.2;
+}
+
+picture {
+    display: block;
+}
+
+/*  */
+
+
+.container {
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.sign-up-navigation {
+    margin: 0 auto;
+}
+
+.main-header {
+    background-image: url(../img/banner-s.jpg);
+    min-width: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0 120px 0;
+    height: auto;
+}
+
+
+.navigation-btn-wrapper {
+    text-align: center;
+    margin-bottom: 118px;
+}
+
+.logo-picture-wrapper-laptop {
+    display: none;
+}
+
+
+.btn-header {
+    background-color: transparent;
+    width: 94px;
+    height: 40px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border: none;
+}
+
+.btn-header:hover,
+.btn-header:focus {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+
+.logo-picture-wrapper img {
+    margin: 0 auto;
+}
+
+.header-offer {
+    text-align: center;
+}
+
+.title-offer {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.description-offer {
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    margin-bottom: 18px;
+}
+
+.desription-offer-span {
+    display: block;
+}
+
+
+
+.find-partner-link {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    width: 280px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgb(255, 78, 80);
+    line-height: 36px;
+}
+
+.find-partner-link:hover,
+.find-partner-link:focus {
+    color: rgb(255, 78, 80);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 78, 80);
+}
