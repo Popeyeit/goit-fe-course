@@ -110,6 +110,9 @@ picture {
 
 .navigation-btn-wrapper {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-picture-wrapper-laptop {
@@ -120,13 +123,14 @@ picture {
 .btn-header {
     background-color: transparent;
     width: 94px;
-    height: 40px;
+    min-height: 40px;
     font-size: 14px;
     font-family: "Montserrat",
         sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 700;
     border: none;
+    cursor: pointer;
 }
 
 .btn-header:hover,
@@ -170,6 +174,10 @@ picture {
 
 
 .find-partner-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 14px;
     font-family: "Montserrat",
         sans-serif;
@@ -179,11 +187,10 @@ picture {
     border-radius: 20px;
     background-color: rgb(255, 78, 80);
     max-width: 280px;
-    height: 40px;
-    display: block;
+    min-height: 40px;
     margin: 0 auto;
     border: 2px solid rgb(255, 78, 80);
-    line-height: 36px;
+
 }
 
 .find-partner-link:hover,
@@ -344,9 +351,12 @@ picture {
 
 
 
+
+
     .title-offer {
         font-size: 52px;
         margin-bottom: 40px;
+        padding: 0 110px;
     }
 
     .description-offer {
@@ -456,11 +466,11 @@ picture {
         background-image: url(../img/banner-l.jpg);
     }
 
-    .sign-up-navigation {
-        justify-content: space-between;
-        align-items: center;
-    }
 
+
+    .title-offer {
+        padding: 0 200px;
+    }
 
     .description-offer {
         margin-bottom: 38px;
