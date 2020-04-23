@@ -110,7 +110,6 @@ picture {
 
 .navigation-btn-wrapper {
     text-align: center;
-
 }
 
 .logo-picture-wrapper-laptop {
@@ -311,6 +310,11 @@ picture {
     .partners-list-item:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    .navigation-btn-wrapper {
+        margin-bottom: 120px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -331,7 +335,6 @@ picture {
 
     .logo-picture-wrapper-laptop {
         display: block;
-        margin-left: 40px;
     }
 
     .main-header {
@@ -339,10 +342,7 @@ picture {
         padding: 38px 0 236px 0;
     }
 
-    .navigation-btn-wrapper {
-        margin-right: 42px;
 
-    }
 
     .title-offer {
         font-size: 52px;
@@ -434,6 +434,13 @@ picture {
         margin-bottom: 60px;
     }
 
+    .navigation-btn-wrapper {
+        padding-right: 42px;
+    }
+
+    .logo-picture-wrapper-laptop {
+        padding-left: 40px;
+    }
 
 }
 
@@ -454,19 +461,12 @@ picture {
         align-items: center;
     }
 
-    .logo-picture-wrapper-laptop {
-        margin: 0;
-    }
-
-    .navigation-btn-wrapper {
-        margin: 0;
-    }
 
     .description-offer {
         margin-bottom: 38px;
     }
 
-    /*  */
+    /*  Partners */
 
 
 
