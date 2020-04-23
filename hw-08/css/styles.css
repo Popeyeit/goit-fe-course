@@ -468,6 +468,8 @@ picture {
 
     /*  */
 
+
+
     .partners {
         padding: 74px 0;
     }
@@ -480,5 +482,46 @@ picture {
     .partners-list-item {
         width: 220px;
     }
+
+    /* TEST */
+
+    /* .icon-overlay {
+        height: 60px;
+        width: 60px;
+    }
+
+    .icon-tv {
+        background-image: url(../img/partners/tv-icon-l.png);
+    }
+
+    .science-icon {
+        background-image: url(../img/partners/science-icon-l.png);
+    }
+
+    .coffee-icon {
+        background-image: url(../img/partners/coffee-icon-l.png);
+    }
+
+    .plane-icon {
+        background-image: url(../img/partners/plane-icon-l.png);
+    } */
+
+
+    /* .partners-title-section {
+        font-size: 30px;
+    }
+
+
+    .partner-name {
+        font-size: 20px;
+    }
+
+    .partner-desription {
+        font-size: 20px;
+    } */
+
+
+
+
 
 }
