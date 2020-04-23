@@ -1,128 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="main-header">
-        <div class="container">
-            <nav class="sign-up-navigation">
+      <div class="container">
+        <nav class="sign-up-navigation">
+          <a class="logo logo-picture-wrapper-laptop" href="#">
+            <picture class="picture-wrapper"
+              ><img src="img/logo-s.png" alt="site-logo"
+            /></picture>
+          </a>
 
+          <div class="navigation-btn-wrapper">
+            <button class="btn-header Log-in">Log in</button>
+            <button class="btn-header sign-up">Sign up</button>
+          </div>
 
-                <a class="logo logo-picture-wrapper-laptop" href="#">
-                    <Picture class="picture-wrapper"><img src="img/logo-s.png" alt="site-logo"></Picture>
-                </a>
-
-                <div class="navigation-btn-wrapper">
-                    <button class="btn-header Log-in">Log in</button>
-                    <button class="btn-header sign-up">Sign up</button>
-                </div>
-
-
-                <a class="logo logo-picture-wrapper" href="#">
-                    <Picture class="logo-picture-wrapper"><img src="img/logo-s.png" alt="site-logo"></Picture>
-                </a>
-
-
-            </nav>
-            <div class="header-offer">
-                <h1 class="title-offer">Share your
-                    holiday dreams</h1>
-                <p class="description-offer">And find the perfect partner
-                    <span class="desription-offer-span">to fullfill it</span></p>
-                <a class="find-partner-link" href="#">Find your holiday partner
-
-                </a>
-            </div>
+          <a class="logo logo-picture-wrapper" href="#">
+            <picture class="logo-picture-wrapper"
+              ><img src="img/logo-s.png" alt="site-logo"
+            /></picture>
+          </a>
+        </nav>
+        <div class="header-offer">
+          <h1 class="title-offer">Share your holiday dreams</h1>
+          <p class="description-offer">
+            And find the perfect partner
+            <span class="desription-offer-span">to fullfill it</span>
+          </p>
+          <a class="find-partner-link" href="#">Find your holiday partner </a>
         </div>
-
+      </div>
     </header>
     <main>
-        <section class="partners">
-            <div class="container">
-                <h2 class="partners-title-section">
-                    Meet a partner for your
-                    best holiday
-                </h2>
-                <ul class="partners-list">
-                    <li class="partners-list-item">
-                        <div class="picture-partner-wrapper">
-                            <picture class="picture-partner">
-                                <!-- <source srcset="img/partners/partner-1l.jpg"
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners-title-section">
+            Meet a partner for your best holiday
+          </h2>
+          <ul class="partners-list">
+            <li class="partners-list-item">
+              <div class="picture-partner-wrapper icon-tv">
+                <picture class="picture-partner">
+                  <!-- <source srcset="img/partners/partner-1l.jpg"
                                     media="(min-width: 1024px)" sizes="200px"> -->
-                                <img src="img/partners/partner-1.jpg" width="122" height="122" alt="partner">
-                            </picture>
-
-                            <div class="icon-overlay icon-tv"></div>
-                        </div>
-                        <div class="partner-info">
-                            <p class="partner-name">Bradley Hunter</p>
-                            <p class="partner-desription">Based in Chicago. I love playing <span
-                                    class="partner-desription-span">tennis and loud music.</span> </p>
-                        </div>
-                    </li>
-                    <li class="partners-list-item order-2">
-                        <div class="picture-partner-wrapper">
-                            <picture class="picture-partner">
-                                <!-- <source srcset="img/partners/partner-2l.jpg" media="(min-width: 1024px)" sizes="200px"> -->
-                                <img src="img/partners/partner-2.jpg" width="122" height="122" alt="partner">
-
-                            </picture>
-
-                            <div class="icon-overlay science-icon"></div>
-                        </div>
-                        <div class="partner-info">
-                            <p class="partner-name">Lucas Marsha</p>
-                            <p class="partner-desription">I get my inspiration from nature and objects around me. I have
-                                a passion to colours, typography and skateboards.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="partners-list-item order-1">
-                        <div class="picture-partner-wrapper">
-                            <picture class="picture-partner">
-                                <!-- <source srcset="img/partners/partner-3l.jpg" media="(min-width: 1024px)" sizes="200px"> -->
-                                <img src="img/partners/partner-3.jpg" width="122" height="122" alt="partner">
-                            </picture>
-
-                            <div class="icon-overlay coffee-icon"></div>
-                        </div>
-                        <div class="partner-info">
-                            <p class="partner-name">Heather Walker</p>
-                            <p class="partner-desription">I'm a happy person that loves cats and climbing on mountains.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="partners-list-item order-3">
-                        <div class="picture-partner-wrapper">
-                            <picture class="picture-partner">
-                                <!-- <source srcset="img/partners/partner-4l.jpg" media="(min-width: 1024px)" sizes="200px"> -->
-                                <img src="img/partners/partner-4.jpg" width="122" height="122" alt="partner">
-                            </picture>
-
-                            <div class="icon-overlay plane-icon"></div>
-                        </div>
-                        <div class="partner-info">
-                            <p class="partner-name">Bradley Hunter</p>
-                            <p class="partner-desription">Based in Chicago. I love playing <span
-                                    class="partner-desription-span">tennis and loud music.</span> </p>
-                        </div>
-                    </li>
-                </ul>
-                <a href="#" class="find-partner-link other-partner-link">See other partners</a>
-
-
-            </div>
-        </section>
-
+                  <img
+                    src="img/partners/partner-1.jpg"
+                    width="122"
+                    height="122"
+                    alt="partner"
+                  />
+                </picture>
+              </div>
+              <div class="partner-info">
+                <p class="partner-name">Bradley Hunter</p>
+                <p class="partner-desription">
+                  Based in Chicago. I love playing
+                  <span class="partner-desription-span"
+                    >tennis and loud music.</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li class="partners-list-item order-2">
+              <div class="picture-partner-wrapper science-icon">
+                <picture class="picture-partner">
+                  <!-- <source srcset="img/partners/partner-2l.jpg" media="(min-width: 1024px)" sizes="200px"> -->
+                  <img
+                    src="img/partners/partner-2.jpg"
+                    width="122"
+                    height="122"
+                    alt="partner"
+                  />
+                </picture>
+              </div>
+              <div class="partner-info">
+                <p class="partner-name">Lucas Marsha</p>
+                <p class="partner-desription">
+                  I get my inspiration from nature and objects around me. I have
+                  a passion to colours, typography and skateboards.
+                </p>
+              </div>
+            </li>
+            <li class="partners-list-item order-1">
+              <div class="picture-partner-wrapper coffee-icon">
+                <picture class="picture-partner">
+                  <!-- <source srcset="img/partners/partner-3l.jpg" media="(min-width: 1024px)" sizes="200px"> -->
+                  <img
+                    src="img/partners/partner-3.jpg"
+                    width="122"
+                    height="122"
+                    alt="partner"
+                  />
+                </picture>
+              </div>
+              <div class="partner-info">
+                <p class="partner-name">Heather Walker</p>
+                <p class="partner-desription">
+                  I'm a happy person that loves cats and climbing on mountains.
+                </p>
+              </div>
+            </li>
+            <li class="partners-list-item order-3">
+              <div class="picture-partner-wrapper plane-icon">
+                <picture class="picture-partner">
+                  <!-- <source srcset="img/partners/partner-4l.jpg" media="(min-width: 1024px)" sizes="200px"> -->
+                  <img
+                    src="img/partners/partner-4.jpg"
+                    width="122"
+                    height="122"
+                    alt="partner"
+                  />
+                </picture>
+              </div>
+              <div class="partner-info">
+                <p class="partner-name">Bradley Hunter</p>
+                <p class="partner-desription">
+                  Based in Chicago. I love playing
+                  <span class="partner-desription-span"
+                    >tennis and loud music.</span
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="find-partner-link other-partner-link"
+            >See other partners</a
+          >
+        </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
