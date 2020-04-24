@@ -85,3 +85,364 @@ picture {
 
 
 /* Header */
+
+.main-header {
+    padding: 20px 0 120px 0;
+}
+
+.banner {
+    background-image: url(../img/banner-s.jpg);
+    min-width: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.btn-authorisation-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img-sm {
+    margin: 0 auto;
+}
+
+
+.authorisation-btn {
+    background-color: transparent;
+    width: 94px;
+    min-height: 40px;
+    font-size: 14px;
+    font-family: "Montserrat",
+        sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.authorisation-btn:hover,
+.authorisation-btn:focus {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+
+}
+
+
+
+.header-title-wrapper {
+    text-align: center;
+}
+
+.header-title {
+    font-size: 29px;
+    font-family: "Montserrat",
+        sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+}
+
+.header-title-desription {
+    font-size: 18px;
+    font-family: "Roboto",
+        sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 18px;
+    font-weight: 300;
+    padding: 0 30px;
+}
+
+
+.btn-see-more {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Montserrat",
+        sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 20px;
+    min-height: 40px;
+    margin: 0 auto;
+}
+
+.btn-find-partner {
+    max-width: 280px;
+    background-color: rgb(255, 78, 80);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 78, 80);
+}
+
+.btn-find-partner:hover,
+.btn-find-partner:focus {
+    color: rgb(255, 78, 80);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 78, 80);
+
+}
+
+
+/* partners */
+
+.partners {
+    padding: 72px 0 58px 0;
+}
+
+.partners-title-section {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.partners-list {
+    text-align: center;
+
+}
+
+.partner-img {
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.icon-overlay {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+
+
+.partner-name {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.partner-description {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(102, 102, 102);
+    font-weight: 300;
+}
+
+
+.icon-overlay::before {
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 78, 80);
+    position: absolute;
+    height: 37px;
+    width: 37px;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(50%);
+    content: "";
+}
+
+.icon-tv::before {
+    content: "";
+    background-image: url(../img/partners/tv-icon.png);
+}
+
+.science-icon::before {
+    content: "";
+    background-color: rgb(255, 165, 7);
+    background-image: url(../img/partners/science-icon.png);
+}
+
+.coffee-icon::before {
+    content: "";
+    background-color: rgb(28, 215, 173);
+    background-image: url(../img/partners/coffee-icon.png);
+}
+
+.plane-icon::before {
+    content: "";
+    background-color: rgb(78, 115, 219);
+    background-image: url(../img/partners/plane-icon.png);
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.btn-see-other {
+    color: rgb(255, 78, 80);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 78, 80);
+    min-width: 284px;
+}
+
+.btn-see-other:hover,
+.btn-see-other:focus {
+    background-color: rgb(255, 78, 80);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 78, 80);
+}
+
+
+
+
+@media (max-width: 767px) {
+
+
+    .logo-site {
+        display: none;
+    }
+
+    .authorisation-btn {
+        margin-bottom: 120px;
+    }
+
+    .span-title-desription {
+        display: block;
+    }
+
+    .span-header-title {
+        display: block;
+    }
+
+    .partners-list-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .partner-info {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+}
+
+.mb-36 {
+    margin-bottom: 36px;
+}
+
+
+
+@media (min-width: 768px) {
+    .banner {
+        background-image: url(../img/banner-m.jpg);
+    }
+
+    .logo-site-sm {
+        display: none;
+    }
+
+    .logo-site {
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    .btn-authorisation-wrapper {
+        justify-content: flex-start;
+    }
+
+    .mb-150 {
+        margin-bottom: 150px;
+    }
+
+
+
+    .header-title {
+        font-size: 46px;
+        margin-bottom: 40px;
+    }
+
+    .header-title-desription {
+        font-size: 22px;
+        margin-bottom: 36px;
+    }
+
+    .btn-find-partner {
+        max-width: 226px;
+    }
+
+    .btn-see-other {
+        max-width: 198px;
+    }
+
+    /* partners */
+
+    .partners {
+        padding: 74px 0 40px 0;
+
+    }
+
+    .mb-36-md {
+        margin-bottom: 36px;
+    }
+
+    .partner-name {
+        margin-bottom: 20px;
+    }
+
+    .mb-40-md {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+    .partners-list-item:not(:nth-last-child(2n + 1)) {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner {
+        background-image: url(../img/banner-l.jpg);
+    }
+
+    .logo-site {
+        justify-content: flex-start;
+    }
+
+    .btn-authorisation-wrapper {
+        justify-content: flex-end;
+    }
+
+    .main-header {
+        padding: 38px 0 234px 0;
+    }
+
+    .header-title-desription {
+        margin-bottom: 38px;
+    }
+
+    .header-title {
+        font-size: 54px;
+    }
+
+    /* Partners */
+
+    .partners-title-section {
+        font-size: 26px;
+    }
+
+    .partners {
+        padding: 74px 0;
+    }
+
+
+
+}
