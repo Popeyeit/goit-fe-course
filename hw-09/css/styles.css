@@ -327,12 +327,14 @@ picture {
         margin: 0 auto;
     }
 
-}
+    .mb-36 {
+        margin-bottom: 36px;
+    }
 
-.mb-36 {
-    margin-bottom: 36px;
+    .partners-title-section-span {
+        display: block;
+    }
 }
-
 
 
 @media (min-width: 768px) {
