@@ -26,29 +26,29 @@
       top: 0;
     }
 
-    &--alarm::before {
-      background-image: url(../images/icons/alarm-icon.svg);
-    }
+    // &--alarm::before {
+    //   background-image: url(../images/icons/alarm-icon.svg);
+    // }
 
-    &--graph::before {
-      background-image: url(..//images/icons/graph-icon.svg);
-    }
+    // &--graph::before {
+    //   background-image: url(..//images/icons/graph-icon.svg);
+    // }
 
-    &--computer::before {
-      background-image: url(..//images/icons/computer-icon.svg);
-    }
+    // &--computer::before {
+    //   background-image: url(..//images/icons/computer-icon.svg);
+    // }
 
-    &--book::before {
-      background-image: url(..//images/icons/book-icon.svg);
-    }
+    // &--book::before {
+    //   background-image: url(..//images/icons/book-icon.svg);
+    // }
 
-    &--home::before {
-      background-image: url(..//images/icons/home-icon.svg);
-    }
+    // &--home::before {
+    //   background-image: url(..//images/icons/home-icon.svg);
+    // }
 
-    &--digital::before {
-      background-image: url(..//images/icons/digital-icon.svg);
-    }
+    // &--digital::before {
+    //   background-image: url(..//images/icons/digital-icon.svg);
+    // }
   }
 
   &__item-title {
@@ -66,4 +66,10 @@
 
 .section-list {
   @include flex (space-around)
+}
+
+@each $icon in $icons {
+  .services__icon--#{$icon}::before {
+    background-image: url('../images/icons/#{$icon}-icon.svg');
+  }
 }

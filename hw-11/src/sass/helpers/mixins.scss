@@ -13,3 +13,24 @@
   flex-wrap: wrap;
   align-items: $align-itm;
 }
+
+// $icons: alarm,
+// graph,
+// computer,
+// book,
+// home,
+// digital;
+
+
+
+
+// @each $icon in alarm,
+// graph,
+// computer,
+// book,
+// home,
+// digital {
+//   .services__icon--#{$icons}::before {
+//     background-image: url(../images/icons/#{$icons}-icon.svg);
+//   }
+// }
