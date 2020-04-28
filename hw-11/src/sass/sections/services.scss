@@ -1,0 +1,69 @@
+.services {
+  padding: 54px 0 48px 0;
+
+  &__section-title {
+    margin-bottom: 64px;
+  }
+
+  &__item {
+    width: 382px;
+    position: relative;
+    padding-left: 82px;
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__icon {
+    &::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      left: 30px;
+      width: 32px;
+      height: 32px;
+      top: 0;
+    }
+
+    &--alarm::before {
+      background-image: url(../images/icons/alarm-icon.svg);
+    }
+
+    &--graph::before {
+      background-image: url(..//images/icons/graph-icon.svg);
+    }
+
+    &--computer::before {
+      background-image: url(..//images/icons/computer-icon.svg);
+    }
+
+    &--book::before {
+      background-image: url(..//images/icons/book-icon.svg);
+    }
+
+    &--home::before {
+      background-image: url(..//images/icons/home-icon.svg);
+    }
+
+    &--digital::before {
+      background-image: url(..//images/icons/digital-icon.svg);
+    }
+  }
+
+  &__item-title {
+    @include font-set(14px, $main-ff, $color-b);
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+
+  &__item-text {
+    @include font-set (15px, $secondary-ff, $color-s, 400, 1.6)
+  }
+
+}
+
+.section-list {
+  @include flex (space-around)
+}
