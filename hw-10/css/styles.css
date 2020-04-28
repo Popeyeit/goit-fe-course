@@ -1,65 +1,62 @@
 /* montserrat-regular - latin */
 @font-face {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    src: local('Montserrat Regular'), local('Montserrat-Regular'),
-        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+    src: local("Montserrat Regular"), local("Montserrat-Regular"),
+        url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
         /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+        url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-700 - latin */
 @font-face {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    src: local('Montserrat Bold'), local('Montserrat-Bold'),
-        url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+    src: local("Montserrat Bold"), local("Montserrat-Bold"),
+        url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
         /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+        url("../fonts/montserrat-v14-latin-700.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* kaushan-script-regular - latin */
 @font-face {
-    font-family: 'Kaushan Script';
+    font-family: "Kaushan Script";
     font-style: normal;
     font-weight: 400;
-    src: local('Kaushan Script'), local('KaushanScript-Regular'),
-        url('../fonts/kaushan-script-v8-latin-regular.woff2') format('woff2'),
+    src: local("Kaushan Script"), local("KaushanScript-Regular"),
+        url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
         /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/kaushan-script-v8-latin-regular.woff') format('woff');
+        url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-300italic - latin */
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
-    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
-        url('../fonts/roboto-v20-latin-300italic.woff2') format('woff2'),
+    src: local("Roboto Light Italic"), local("Roboto-LightItalic"),
+        url("../fonts/roboto-v20-latin-300italic.woff2") format("woff2"),
         /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/roboto-v20-latin-300italic.woff') format('woff');
+        url("../fonts/roboto-v20-latin-300italic.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-regular - latin */
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'),
-        url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
+    src: local("Roboto"), local("Roboto-Regular"),
+        url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
         /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/roboto-v20-latin-regular.woff') format('woff');
+        url("../fonts/roboto-v20-latin-regular.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-
-
 
 img {
     display: block;
@@ -100,7 +97,8 @@ body {
 
 .banner {
     background-image: -webkit-gradient(linear,
-            left top, right top,
+            left top,
+            right top,
             from(rgba(252, 227, 138, 0.9)),
             to(rgba(243, 129, 129, 0.9))),
         url(../img/banner.jpg);
@@ -127,7 +125,8 @@ body {
 (min-resolution: 192dpi) {
     .banner {
         background-image: -webkit-gradient(linear,
-                left top, right top,
+                left top,
+                right top,
                 from(rgba(252, 227, 138, 0.9)),
                 to(rgba(243, 129, 129, 0.9))),
             url(../img/banner@2x.jpg);
@@ -433,7 +432,8 @@ body {
 .overlay {
     position: absolute;
     background-image: -webkit-gradient(linear,
-            left bottom, left top,
+            left bottom,
+            left top,
             from(rgba(252, 227, 138, 0.9)),
             to(rgba(243, 129, 129, 0.9)));
     background-image: -o-linear-gradient(bottom,
@@ -448,7 +448,6 @@ body {
     left: 0;
     visibility: hidden;
     opacity: 0;
-
 }
 
 .team-list__item--hover:hover .overlay {
@@ -462,9 +461,7 @@ body {
     transition: all 200ms linear;
 }
 
-
-
-.team-list__item--hover:hover .services-list__img-wrapper--animation {
+.team-list__item--hover:hover .team-list__img-wrapper--animation {
     -webkit-transform: translate(-10px, -10px);
     -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
@@ -506,7 +503,6 @@ body {
     align-items: center;
     text-decoration: none;
     background-color: rgb(252, 227, 138);
-
 }
 
 .list-socials__icon {
@@ -545,8 +541,7 @@ body {
     text-transform: uppercase;
     line-height: 16px;
     font-size: 14px;
-    font-family: "Montserrat",
-        sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: rgb(51, 51, 51);
     margin-bottom: 14px;
     text-align: center;
@@ -555,8 +550,7 @@ body {
 .team-list__teammate-occupation {
     line-height: 24px;
     font-size: 15px;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(153, 153, 153);
     text-transform: none;
     font-style: italic;
@@ -565,8 +559,6 @@ body {
 }
 
 /* FOOTER */
-
-
 
 .footer--top-line::before {
     content: "";
@@ -584,13 +576,11 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-
 }
 
 .designer-info {
     font-size: 14px;
-    font-family: "Montserrat",
-        sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: rgb(51, 51, 51);
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -601,7 +591,6 @@ body {
     text-decoration: none;
     color: rgb(243, 129, 129);
 }
-
 
 .form-subscribe {
     display: -webkit-box;
@@ -615,16 +604,14 @@ body {
     height: 44px;
     width: 234px;
     padding-left: 13px;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .form-subscribe__email::-webkit-input-placeholder {
     content: "";
     content: "";
     font-size: 15px;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(204, 204, 204);
     font-style: italic;
     line-height: 24px;
@@ -635,8 +622,7 @@ body {
     content: "";
     content: "";
     font-size: 15px;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(204, 204, 204);
     font-style: italic;
     line-height: 24px;
@@ -647,8 +633,7 @@ body {
     content: "";
     content: "";
     font-size: 15px;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(204, 204, 204);
     font-style: italic;
     line-height: 24px;
@@ -659,8 +644,7 @@ body {
     content: "";
     content: "";
     font-size: 15px;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(204, 204, 204);
     font-style: italic;
     line-height: 24px;
@@ -671,8 +655,7 @@ body {
     content: "";
     content: "";
     font-size: 15px;
-    font-family: "Roboto",
-        sans-serif;
+    font-family: "Roboto", sans-serif;
     color: rgb(204, 204, 204);
     font-style: italic;
     line-height: 24px;
@@ -685,8 +668,7 @@ body {
     width: 150px;
     border: none;
     font-size: 14px;
-    font-family: "Montserrat",
-        sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 700;
     line-height: 16px;
