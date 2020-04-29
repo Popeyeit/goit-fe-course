@@ -260,11 +260,9 @@ ol {
 
 .overlay {
   position: absolute;
-  background-image: linear-gradient(
-    0deg,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
-  );
+  background-image: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%);
   height: 100%;
   width: 100%;
   top: 0;
@@ -391,7 +389,6 @@ ol {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
-
   align-self: center;
 }
 

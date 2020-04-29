@@ -1,0 +1,36 @@
+@mixin font-set ($fs, $ff, $sc, $fw: 400, $lh: 1.2) {
+  font-size: $fs;
+  font-family: $ff;
+  font-weight: $fw;
+  color: $sc;
+  line-height: $lh;
+}
+
+
+@mixin flex ($just-cont:flex-start, $align-itm:stretch) {
+  display: flex;
+  justify-content: $just-cont;
+  flex-wrap: wrap;
+  align-items: $align-itm;
+}
+
+// $icons: alarm,
+// graph,
+// computer,
+// book,
+// home,
+// digital;
+
+
+
+
+// @each $icon in alarm,
+// graph,
+// computer,
+// book,
+// home,
+// digital {
+//   .services__icon--#{$icons}::before {
+//     background-image: url(../images/icons/#{$icons}-icon.svg);
+//   }
+// }

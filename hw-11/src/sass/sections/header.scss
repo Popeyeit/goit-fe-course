@@ -1,0 +1,126 @@
+.banner {
+  background-image: linear-gradient(90deg,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%),
+    url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  background-position: center;
+
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(90deg,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%),
+      url(../images/banner@2x.jpg);
+
+  }
+
+}
+
+.header-page {
+  padding: 38px 0 230px 0;
+}
+
+
+.navigation-page {
+  @include flex (space-between, center);
+  margin-bottom: 200px;
+
+
+  &__navigation {
+    @include flex (flex-end, center);
+  }
+
+}
+
+
+.navigation__link {
+  @include font-set(14px, $main-ff, rgb(255, 255, 255));
+  text-transform: uppercase;
+
+  &--hover {
+
+    &:hover,
+    &:focus {
+      color: $decorate-color-y;
+    }
+  }
+
+
+  &--bottom-line {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgb(252, 227, 138);
+      visibility: hidden;
+      opacity: 0;
+      width: 100%;
+      height: 3px;
+      display: block;
+      bottom: -10px;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 56px;
+}
+
+
+
+.navigation__icon {
+  fill: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+}
+
+.navigation__btn {
+  width: 18px;
+  height: 18px;
+  border: none;
+
+
+  &:hover,
+  &:focus {
+    .navigation__icon--hover {
+      fill: $decorate-color-y;
+    }
+  }
+}
+
+
+.header-section {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  &__title {
+    @include font-set (72px, $kaush, rgb(255, 255, 255), );
+    margin-bottom: 48px;
+  }
+
+  &__greeting {
+    @include font-set (150px, $main-ff, $color-w, 700);
+    text-transform: uppercase;
+    padding: 0 190px;
+    margin-bottom: 110px;
+  }
+
+  &__btn {
+    border: 3px solid $color-w;
+    @include font-set (14px, $main-ff, $color-w, 700);
+    text-transform: uppercase;
+    width: 164px;
+    height: 44px;
+  }
+
+}

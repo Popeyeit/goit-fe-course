@@ -1,0 +1,143 @@
+.team {
+  padding: 48px 0 82px 0;
+
+  &__section-title {
+    margin-bottom: 46px;
+  }
+
+  &__section-text {
+    margin-bottom: 90px;
+    padding: 0 60px;
+  }
+
+}
+
+.section-text {
+  @include font-set(15px, $main-ff, $color-s, 400, 1.6);
+  text-align: center;
+}
+
+.team-list {
+  @include flex(space-between);
+
+  &__item {
+    width: 380px;
+
+    &--hover {
+      &:hover {
+        .overlay {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .team-list__img-wrapper--animation {
+          transform: translate(-10px, -10px);
+          box-shadow: 10px 10px rgb(149, 225, 211);
+        }
+      }
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+
+    &--animation {
+      transition: all 200ms linear;
+    }
+  }
+
+  &__teammate-name {
+    @include font-set(14px, $main-ff, $color-b);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  &__teammate-occupation {
+    @include font-set(15px, $secondary-ff, $color-s, 300);
+    text-transform: none;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.overlay {
+  position: absolute;
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      from(rgba(252, 227, 138, 0.9)),
+      to(rgba(243, 129, 129, 0.9)));
+  background-image: -o-linear-gradient(bottom,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%);
+  background-image: linear-gradient(0deg,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+
+  &__list-socials {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+  }
+}
+
+.list-socials {
+  display: flex;
+
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(243, 129, 129, 0.5);
+  }
+
+  &__link {
+    background-color: $decorate-color-y;
+    height: 56px;
+    width: 56px;
+    @include flex (center, center);
+
+    &--hover {
+
+      &:hover {
+        background-color: $decorate-color-p;
+
+        .list-socials__icon {
+          fill: $color-w
+        }
+      }
+
+    }
+
+  }
+
+  &__icon {
+    fill: $decorate-color-p;
+
+    &--facebook {
+      height: 26px;
+      width: 13px;
+    }
+
+    &--twitter {
+      width: 26px;
+      height: 22px;
+    }
+
+    &--pinterest {
+      width: 21px;
+      height: 26px;
+    }
+
+    &--instagram {
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
