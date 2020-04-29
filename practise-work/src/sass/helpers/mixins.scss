@@ -1,0 +1,14 @@
+@mixin font-set ($fs, $ff, $sc, $fw:400, $lh:1.2) {
+  font-size: $fs;
+  font-family: $ff;
+  color: $sc;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin flex ($just-c:flex-start, $align-i:stretch) {
+  display: flex;
+  justify-content: $just-c;
+  flex-wrap: wrap;
+  align-items: $align-i;
+}

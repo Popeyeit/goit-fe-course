@@ -1,0 +1,55 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../images/header/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 32px;
+  padding-bottom: 260px;
+
+  @media (min-resolution: 192dpi) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url(../images/header/bg@2x.jpg);
+  }
+
+  &__title {
+    @include font-set (48px, $main-ff, #ffffff);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 34px;
+
+  }
+
+  &__description {
+    @include font-set(20px, $add-ff, #fff);
+    text-align: center;
+    margin-bottom: 52px;
+    ;
+  }
+}
+
+.logo {
+  @include font-set (24px, $main-ff, #fff, 700, 36px)
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation {
+  @include flex(space-between, center);
+  margin-bottom: 254px;
+
+  &__list {
+    @include flex ();
+
+    &-item:not(:last-child) {
+      margin-right: 36px;
+    }
+
+    &-link {
+      @include font-set(14px, $main-ff, #fff, 400, 24px)
+    }
+  }
+}

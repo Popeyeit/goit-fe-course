@@ -1,0 +1,80 @@
+.get-in-touch {
+  padding: 98px 0;
+}
+
+.send-form {
+  width: 100%;
+
+  &__list {
+    @include flex(space-between);
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+  }
+
+  &__message {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    resize: none;
+
+    &::placeholder {
+      @include font-set (12px, $add-ff, $color-gray, 400, 1.6);
+      text-transform: uppercase;
+      text-align: left;
+    }
+  }
+
+  &__wrapper-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__btn {
+    margin: 0;
+    @include font-set(12px, $add-ff, $color-gray, 400, 1.6);
+    text-transform: uppercase;
+    margin-right: 106px;
+
+    &:hover {
+      background-color: $color-r;
+      color: $color-w;
+    }
+  }
+
+  &__text {
+    @include font-set(14px, $add-ff, $color-gray);
+
+    &::before {
+      content: '* ';
+      color: $color-r;
+    }
+  }
+}
+
+
+.input-settings {
+  width: 100%;
+  border: 1px solid rgb(85, 85, 85);
+  height: 42px;
+  margin-bottom: 20px;
+
+  padding-left: 10px;
+
+  &:required:focus:valid:not(:placeholder-shown) {
+    background-color: rgba(0, 255, 0, 0.3);
+  }
+
+  &:required:focus:invalid:not(:placeholder-shown) {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+
+  &::placeholder {
+    @include font-set (12px, $add-ff, $color-gray, 400, 1.6);
+    text-transform: uppercase;
+    text-align: left;
+  }
+}

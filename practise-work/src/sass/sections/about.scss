@@ -1,0 +1,129 @@
+.about {
+  padding: 98px 0;
+  background-color: #f8f8f8;
+
+  &__section-description {
+    margin-bottom: 74px;
+  }
+
+  &__description-wrapper {
+    @include flex(space-between);
+    flex-wrap: nowrap;
+    margin-bottom: 68px;
+  }
+
+  &__list {
+    @include flex(space-between);
+  }
+
+  &__item {
+    max-width: max-content;
+    text-align: center;
+
+    &-name {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    &-occupation {
+      @include font-set(13px, $add-ff, $color-gray, 400, 24px)
+    }
+
+    &--hover {
+      &:hover .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+
+
+  &__img-wrapper {
+    position: relative;
+    margin-bottom: 14px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    top: 106px;
+
+    left: 0;
+  }
+
+  &__list-wrapper {
+    position: relative;
+  }
+
+  &__btn-item {
+    background-color: $color-r;
+    width: 35px;
+    height: 38px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+
+    &--prev {
+      background-color: rgba(85, 85, 85, 0.5);
+      background-image: url(../images/about/prev.svg);
+    }
+
+    &--next {
+
+      background-image: url(../images/about/next.svg);
+    }
+
+  }
+}
+
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(85, 85, 85, 0.5);
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 200ms linear;
+  background-clip: padding-box;
+
+
+  &__socials {
+    &-list {
+      display: flex;
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+
+
+    }
+
+
+
+    &-icon {
+      width: 28px;
+      height: 28px;
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &:hover {
+        background-color: $color-r;
+      }
+    }
+
+  }
+}
+
+@each $icon in $icons {
+  .overlay__socials-icon--#{$icon} {
+    background-image: url('../images/about/#{$icon}.svg');
+  }
+}

@@ -1,0 +1,4 @@
+.section-description {
+  @include font-set (16px, $add-ff, $color-gray, 400, 24px);
+  text-align: center;
+}
